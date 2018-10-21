@@ -33,6 +33,6 @@ for row in rows :
     for rowAttr in rowAttrs :
         attrs.append(rowAttr.text) # df.loc[rowCnt] 에 사용할수 있게끔 list에 담는다.
     df.loc[cnt] = attrs
-    print("{}행 크롤링 완료!".format(str(cnt)))
+    print("{} row crawling done!".format(str(cnt)))
     cnt += 1 # df.loc[] 의 값을 늘려준다.
 
