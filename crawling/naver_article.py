@@ -17,6 +17,9 @@ def type6(articlelist):
         # 기사 li for loop
         for result2 in results2 :
             try :
+                ### comment : dt의 기사제목을 크롤링 할 때 원래 code와 같이 if 구분을 지어도 되지만 css not selector를 이용해서 .photo 가 아닌것을 crawling해도 된다. 
+                ### find_element_by_css_selector('dt:not(.photo) > a')
+                
                 name = result2.find_element_by_css_selector("dl > dt:nth-child(1) > a").text
 
                 # 기사에 사진이 없거나 동영상 기사일 경우 dt:nth-child(2) > a 를 선택
