@@ -64,6 +64,6 @@ s.push(5)
 
 while not s.empty():
     print(s.pop(), end=" ")
-
+print()
 
 
